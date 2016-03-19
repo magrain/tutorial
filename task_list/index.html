@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html land="ja">
+<head>
+	<meta charset="UTF-8">
+		<title>tasker</title>
+	<link rel="stylesheet" href="../css/main.css">
+	<script type="text/javascript" src="./task.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="header-left">
+			Magrainのページ
+		</div>
+		<div class="header-right">
+			<ul>
+				<li><a href="../pass_check/index.html">パスワードチェッカー</a></li>
+				<li><a href="../calculator/index.html">電卓</a></li>
+				<li><a href="../calendar/index.html">カレンダー</a></li>
+				<li>タスクリスト</li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div class="sidebar">
+			<input type="button" class="button" value="Task_Title" >:
+			<input type="text"  name="task_name" class="new_task"><br>
+			<input type="button" class="button" value="Limit_Day" >:
+			<select  name="limit_time" class="new_task">
+				<option value="1st">1st</option>
+				<option value="2nd">2nd</option>
+				<option value="3rd">3rd</option>
+				<option value="4th">4th</option>
+				<option value="5th">5th</option>
+				<option value="6th">6th</option>
+				<option value="7th">7th</option>
+				<option value="8th">8th</option>
+				<option value="9th">9th</option>
+				<option value="10th">10th</option>
+				<option value="11th">11th</option>
+				<option value="12th">12th</option>
+				<option value="13th">13th</option>
+				<option value="14th">14th</option>
+				<option value="15th">15th</option>
+				<option value="16th">16th</option>
+				<option value="17th">17th</option>
+				<option value="18th">18th</option>
+				<option value="19th">19th</option>
+				<option value="20th">20th</option>
+				<option value="21st">21st</option>
+				<option value="22nd">22nd</option>
+				<option value="23rd">23rd</option>
+				<option value="24th">24th</option>
+				<option value="25th">25th</option>
+				<option value="26th">26th</option>
+				<option value="27th">27th</option>
+				<option value="28th">28th</option>
+				<option value="29th">29th</option>
+				<option value="30th">30th</option>
+				<option value="31st">31st</option>
+			</select>
+			<br>
+			<input type="radio" name="priority" value="Hurry">
+			<input type="button" class="button" value="Hurry" ><br>
+			<input type="radio" name="priority" value="Normal" checked>
+			<input type="button" class="button" value="Normal" ><br>
+ 		   <input type="radio" name="priority" value="Anytime">
+			<input type="button" class="button" value="Anytime" ><br>
+			<input type="button" class="button" value="Add" >
+		</div>
+		<div class="contents" name="contents">
+			<div>
+			</div>
+			<div id="date"></div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-right">
+			<ul>
+				<li><a href="../pass_check/index.html">パスワードチェック</a></li>
+				<li><a href="../calculator/index.html">電卓</a></li>
+				<li><a href="../calendar/index.html">カレンダー</a></li>
+				<li>タスクリスト</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

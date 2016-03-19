@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>カレンダー</title>
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<link rel="stylesheet" href="./calender.css" type="text/css">
+	<script type="text/javascript" src="./calender.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="header-left">
+			Magrainのページ
+		</div>
+		<div class="header-right"></div>
+	</div>
+	<div class="main">
+		<div class="sidebar">
+			<h1>カレンダー</h1>
+			<button type="button" class="flag" date-number="-7">前週へ</button>
+			<button type="button" class="flag" date-number="0">来週へ</button>
+			<div>予定詳細</div><br>
+			<div>
+				日付：
+				<span class="side"></span>
+				日
+			</div><br>
+			<div>
+				時間：
+				<span class="side"></span>
+				~
+				<span class="side"></span>
+			</div><br>
+			<div>場所：<span class="side"></span></div><br>
+			<div>内容：<span class="side"></span></div><br>
+		</div>
+		<div class="contents">
+			<div>
+       <form method="POST" action="./GetJson" accept-charset="UTF-8">
+					<input type="text" name="year" />年/
+					<input type="text" name="month" />月/
+					<input type="text" name="date" />日<br>
+					<input type="text" name="begin" />時~
+					<input type="text" name="end" />時<br>
+					<input type="text" name="title" />予定:
+					<input type="text" name="place" />場所<br>
+					<button type="submit" value="submit">予定追加</button>
+				</form>
+			</div>
+			<div class="set">
+				<div id="now"></div>
+				<table>
+					<caption align="top" id="month"></caption>
+					<tr>
+						<th class="time">曜日</th>
+						<th class="Week" id="sun">日</th>
+						<th class="Week">月</th>
+						<th class="Week">火</th>
+						<th class="Week">水</th>
+						<th class="Week">木</th>
+						<th class="Week">金</th>
+						<th class="Week" id="satu">土</th>
+					</tr>
+					<tr>
+						<th class="time">日付</th>
+						<th class="date" id="sunday"></th>
+						<th class="date"></th>
+						<th class="date"></th>
+						<th class="date"></th>
+						<th class="date"></th>
+						<th class="date"></th>
+						<th class="date" id="saturday"></th>
+					</tr>
+					<tr>
+						<td class="time">0:00 ~ 5:59</td>
+						<td class="Mid"></td>
+						<td class="Mid"></td>
+						<td class="Mid"></td>
+						<td class="Mid"></td>
+						<td class="Mid"></td>
+						<td class="Mid"></td>
+						<td class="Mid"></td>
+					</tr>
+					<tr>
+						<td class="time">6:00 ~ 11:59</td>
+						<td class="Morning"></td>
+						<td class="Morning"></td>
+						<td class="Morning"></td>
+						<td class="Morning"></td>
+						<td class="Morning"></td>
+						<td class="Morning"></td>
+						<td class="Morning"></td>
+					</tr>
+					<tr>
+						<td class="time">12:00 ~ 17:59</td>
+						<td class="Noon"></td>
+						<td class="Noon"></td>
+						<td class="Noon"></td>
+						<td class="Noon"></td>
+						<td class="Noon"></td>
+						<td class="Noon"></td>
+						<td class="Noon"></td>
+					</tr>
+					<tr>
+						<td class="time">18:00 ~ 23:59</td>
+						<td class="Night"></td>
+						<td class="Night"></td>
+						<td class="Night"></td>
+						<td class="Night"></td>
+						<td class="Night"></td>
+						<td class="Night"></td>
+						<td class="Night"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-right"></div>
+	</div>
+</body>
+</html>

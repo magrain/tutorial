@@ -1,0 +1,61 @@
+input{
+	height: 30px;
+	font-size: 100%;
+}
+
+table{
+	width: 70%;
+	height: auto;
+	font-size: 28px; 
+	text-align: center;
+	border: 3px #ddff99 ridge;
+	color: #ff5555;
+}
+
+.button:active{
+	background-color: #fff1cf;
+	color: #5f414b;
+} 
+
+.symbol:active{
+	background-color: #0d3380;
+	color: #ff80ff;
+}
+
+#clr:active{
+	background-color: red;
+	color: #332d06;	
+}
+
+.sidebar table{
+	width: 100%;
+	text-align: center;
+	color: #330e0a;
+	position : relative;
+	top: 170px;
+}
+
+.sidebar th
+{
+	width: 25%;
+	border: 3px #3cb371 outset;
+	background-color: #80dfff;
+}
+
+#sym{
+	width: 100%;
+}
+
+.struck td {
+	width: 33%;
+	border: 5px #ffff99 outset;
+	background-color: #ccff66;
+}
+
+#clr{
+	width: 33%;
+	border: 5px #ffff99 outset;
+	background-color: #ccff66;
+	color: #ff00ff;
+}
+

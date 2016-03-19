@@ -1,0 +1,80 @@
+.set{
+	width: 100%;
+	height: 100%;
+}
+
+table{
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	border-collapse: collapse;
+	border: 1px #000000 solid;
+}
+caption{
+	width: auto;
+	font-size: 22px;
+}
+
+td{
+	height: 12%;
+	border: 1px #000000 solid;
+}
+th
+{
+	height: 12%;
+	border: 1px #000000 solid;
+}
+
+.Week{
+	width: 14%;
+	height: 4%;
+	font-size: 23px;
+}
+
+.date{
+	width: 14%;
+	height: 4%;
+	font-size: 23px;
+}
+
+#sun{
+	color: red;
+}
+
+#sunday{
+	color: red;
+}
+
+#satu{
+	color: blue;
+}
+
+#saturday{
+	color: blue;
+}
+
+.time{
+	width: 2%;
+}
+
+.Mid{
+	width: 14%;
+	font-size: 12px;
+}
+
+.Morning{
+	width: 14%;
+	font-size: 12px;
+}
+
+.Noon{
+	width: 14%;
+	font-size: 12px;
+}
+
+.Night{
+	width: 14%;
+	font-size: 12px;
+}
+.flag{
+}
